@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title> UMD CLUBS </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+
+   <div class = "top">
+       <img src = "CHLogo.png" onClick = "homePage()" width = "330" height = "42">
+   </div>
+
+   <div class = "entryBox"></div>
+
+   <form autocomplete ="off" class = "entries" >
+       Club Name:<br>
+       <input size = "35" type="text" name="clubname"><br>
+       Description:<br>
+       <input size = "35" type="text" name="description"><br>
+       Email:<br>
+       <input size = "35" type="text" name="email"><br>
+       Upcoming Meeting:<br>
+       <input size = "35" type="text" name="upcoming"><br>
+       Location:<br>
+       <input size = "35" type="text" name="location"><br>
+       <input type="submit" name="submit" value="Submit">
+       <button onclick="storeData()"></button>
+     </form>      
+
+   
+   <script>
+       function storeData() {
+        var clubName = document.getElementById("clubname").value;
+        var description = documement.getElementById("description").value;
+        findclub.readData(clubName, description);
+       }
+    
+ 
+        function homePage() {
+           window.location.href = "index.html";
+       }
+    //    function storeInfo(){
+    //        var name = document.getElementById("clubname").value;
+    //        var description = document.getElementBy("description").value;
+    //        var email = document.getElementBy("email").value;
+    //        var events = document.getElementBy("upcoming").value;
+    //        var location = document.getElementById("location").value;
+    //        findclub.displayClubInfo(name, description, email, events, location);
+    //        window.location.href = "findclub.html";
+    //    }
+      
+  
+   </script>
+</body>
+</html>
