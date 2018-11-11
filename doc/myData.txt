@@ -1,0 +1,5 @@
+Name: Club Name
+Description: blah blah blah
+Email: whatever
+Event: Technica
+Location: Armory
